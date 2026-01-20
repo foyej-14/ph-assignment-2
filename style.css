@@ -437,6 +437,12 @@ margin-top: 15px;
         display: none;
     }
 
+
+
+    .f-logo{
+
+        display: none;
+    }
     .hamburger {
         display: block;
     }
