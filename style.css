@@ -25,12 +25,25 @@
      margin: auto;
      padding: 0 20px;
      color:#ffff;
+     display: flex;
      
  }
+
+ .h2-cont {
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 48px;
+font-weight: 600;
+
+ }
  .logo{
+    width: 219px;
 height: 120;
 margin-top: 30px;
 margin-bottom: 30px;
+margin-left: 200px;
+
 
 
  }
@@ -70,6 +83,7 @@ margin-bottom: 30px;
      border-radius: 30px;
      border: none;
      color: #fff;
+     margin-right: 200px;
      background: linear-gradient(45deg, #910a15, #ffc371);
      cursor: pointer;
  }
@@ -174,19 +188,20 @@ margin-bottom: 30px;
     display: inline-flex;
      background-color: #830771;
      border: 1px solid #9b5016;
-     color: #fff;
+     color: #2ab903;
      font-size: 16px;
      justify-content: center;
  }
  .sp-btn{
     display: inline-flex;
-    background-color:transparent;
-     color: #7bb722;
+    background-color:wheat;
      font-size: 16px;
           justify-content: center;
           border-color: #00ff88;
           border: #00ff88;
           border:10px;
+          border-radius: px;
+          padding: 20px;
 
  }
  .sp-btn img{
@@ -382,12 +397,30 @@ margin-bottom: 30px;
      color: #fff;
      background-image:url("./assets/footer-bg.png");
      
+     
  }
-f.logo{
+ .footer img{
+width: 150px;
+
+ }
+.f-logo{
 
      display: flex;
       justify-content: center;
       align-items: center;
+     margin-left: 595px;
+     margin-right: 595px;
+      width: 150px;
+
+}
+
+.f-icons{
+
+margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
 
 }
  footer hr {
@@ -396,42 +429,150 @@ f.logo{
      opacity: 0.3;
  }
 
- /* ===== RESPONSIVE ===== */
- @media (max-width: 576px) {
 
-     .nav-menu,
-     .nav-btn {
-         display: none;
-     }
 
-     .hamburger {
-         display: block;
-     }
+@media (max-width: 576px) {
+    .nav-menu,
+    .nav-btn {
+        display: none;
+    }
 
-     .banner h1 {
-         font-size: 28px;
-     }
+    .hamburger {
+        display: block;
+    }
 
-     .banner-buttons {
-         flex-direction: column;
-     }
+    .banner-content h1 {
+        font-size: 28px;
+    }
 
-     .stats {
-         grid-template-columns: repeat(2, 1fr);
-     }
+    .banner-content p {
+        font-size: 14px;
+    }
 
-     .features,
-     .episodes {
-         grid-template-columns: 1fr;
-     }
+    .banner-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container{
 
-     .host {
-         flex-direction: column;
-         text-align: center;
-     }
- }
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
 
- 
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .techwave-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .episodes {
+        grid-template-columns: 1fr;
+        gap: 150px;
+    }
+
+    .host-image-text {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-text .p1,
+    .about-text .p2 {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .banner {
+        background-size: cover;
+        min-height: 40vh;
+    }
+
+    .img-class-1 {
+        max-width: 250px;
+        min-height: 250px;
+        margin-top: 50px;
+    }
+
+    .img-class-2 {
+        max-width: 60px;
+        min-height: 60px;
+        top: 150px;
+        right: 50px;
+    }
+
+    .f-logo{
+
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: 15px;
+    }
+   
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .banner-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .techwave-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .episodes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .host-image-text {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .img-class-1 {
+        max-width: 300px;
+        min-height: 300px;
+    }
+
+    .img-class-2 {
+        max-width: 80px;
+        min-height: 80px;
+    }
+
+    .about-text .p1,
+    .about-text .p2 {
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+     .f-logo{
+
+        max-width: 100%;
+        min-height: 80px;
+    }
+}
+
 
 
  .footer{
