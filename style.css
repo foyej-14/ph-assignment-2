@@ -1,0 +1,441 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container-shared {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     color: #222;
+ }
+
+ img {
+     max-width: 100%;
+     display: block;
+ }
+
+ .container {
+     /* max-width: 1200px; */
+     margin: auto;
+     padding: 0 20px;
+     color:#ffff;
+     
+ }
+ .logo{
+height: 120;
+margin-top: 30px;
+margin-bottom: 30px;
+
+
+ }
+
+ section {
+     padding: 80px 0;
+ }
+
+ /* ===== NAVBAR ===== */
+ header {
+     border-bottom: 1px solid #eee;
+     background: #fff;
+ }
+
+ .nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 70px;
+     background-color: #1a0b2e;
+     color: #ffff;
+ }
+
+ .logo {
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ .nav-menu {
+     display: flex;
+     gap: 30px;
+     list-style: none;
+ }
+
+ .nav-btn {
+     padding: 10px 22px;
+     border-radius: 30px;
+     border: none;
+     color: #fff;
+     background: linear-gradient(45deg, #910a15, #ffc371);
+     cursor: pointer;
+ }
+
+ .hamburger {
+     display: none;
+     font-size: 26px;
+ }
+
+ /* ===== BANNER ===== */
+ .banner {
+
+     background-image: url("./assets/hero-bg.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+     min-height: 50vh;
+
+ }
+
+
+
+ .banner-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .podcast-circle-img {
+
+     position: relative;
+
+ }
+
+
+ .new-design {
+     position: absolute;
+     top: 120px;
+     right: 20px;
+     background: rgb(56, 170, 21);
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 12px;
+     border-radius: 20px;
+     z-index: 6;
+ }
+
+
+ .img-class-1 {
+
+     max-width: 350px;
+     min-height: 350px;
+     margin-top: 80px;
+     text-align: center;
+     position: relative;
+
+ }
+
+ .img-class-2 {
+
+     position: absolute;
+     top: 200px;
+     right: 130px;
+     bottom: 130px;
+     max-width: 90px;
+     min-height: 90px;
+
+ }
+
+
+ .banner-content h1 {
+     font-size: 42px;
+     margin-top: 25px;
+     color: #ffff;
+
+
+ }
+
+ .banner-content p {
+     margin-top: 15px;
+     color: #ffff;
+ }
+
+ .banner-buttons {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     margin-top: 15px;
+
+
+ }
+
+ .banner-buttons button {
+     padding: 12px 25px;
+     border-radius: 30px;
+     border: none;
+     cursor: pointer;
+ }
+
+ .btn-outline {
+    display: inline-flex;
+     background-color: #830771;
+     border: 1px solid #9b5016;
+     color: #fff;
+     font-size: 16px;
+     justify-content: center;
+ }
+ .sp-btn{
+    display: inline-flex;
+    background-color:transparent;
+     color: #7bb722;
+     font-size: 16px;
+          justify-content: center;
+          border-color: #00ff88;
+          border: #00ff88;
+          border:10px;
+
+ }
+ .sp-btn img{
+
+    display: flex;
+    justify-content: center;
+ }
+
+ /* ===== ABOUT ===== */
+ .about-container {
+     background-color: #1a0b2e;
+     color: #fff;
+ }
+
+ .about-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-weight: 300;
+
+ }
+
+ .about-text .p1 {
+     font-size: 0.9 rem;
+     max-width: 550px;
+     line-height: 2;
+     margin-bottom: 12px;
+
+ }
+
+ .about-text .p2 {
+
+     font-size: 0.9 rem;
+     max-width: 550;
+     line-height: 2;
+     margin-bottom: 12px;
+
+
+
+
+
+ }
+
+
+ .about-container h2 {
+     font-size: 3rem;
+     text-align: center;
+     margin-bottom: 20px;
+
+ }
+
+ .stats {
+     margin-top: 50px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 30px;
+ }
+
+ .stat h3 {
+     font-size: 32px;
+     color: #00ff88;
+ }
+
+ /* ===== WHY CHOOSE ===== */
+
+ .container{
+    background-color: #1a0b2e;
+    padding:80px 0;
+ }
+
+ .techWavwe-main h2{
+    font-size: 2.5rem;
+    color:white;
+    text-align: center;
+    margin-bottom: 40PX;
+ }
+ 
+ .techwave-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color:white;
+    gap:20px;
+ }
+ .card {
+    background: #1a0b2e;
+    border:1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+     border-radius: 12px;
+     text-align: center;
+     transition: 0.3s;
+ }
+
+ /* .card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+ } */
+
+ .card img{
+    width:50px;
+    margin-bottom: 12px;
+ }
+
+ .card h3{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+ }
+
+ .card p{
+    font-size: 0.9rem;
+ }
+
+
+ .normal-card{
+    grid-row: span 2;
+ }
+
+ .wide-card{
+    grid-column: span 2;
+ }
+ /* ===== EPISODES ===== */
+ .episodes {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 25px;
+     margin-top: 50px;
+ }
+
+ .episode iframe {
+     width: 100%;
+     height: 200px;
+     border-radius: 10px;
+ }
+
+ /* ===== HOST ===== */
+ .container-host{
+    background: #1a0b2e;
+    color:white;
+    padding:30px;
+    box-shadow: #ffff;
+
+ }
+ .host h2 {
+     font-size: 3rem;
+     font-weight: 600;
+     text-align: center;
+ }
+ 
+ .container-host h3 {
+     font-size: 2.5rem;
+     font-weight: 600;
+ }
+
+
+.host-image-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: #533C72;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.host-image img{
+    max-width: 200px;
+}
+
+ .socials {
+     display: flex;
+     gap: 15px;
+    justify-content: start;
+    margin-top: 20px;
+    
+ }
+
+.socials img {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+
+
+ /* ===== FOOTER ===== */
+ footer {
+     text-align: center;
+     padding: 50px 20px;
+     background: #111;
+     color: #fff;
+     background-image:url("./assets/footer-bg.png");
+     
+ }
+f.logo{
+
+     display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+ footer hr {
+     margin: 25px auto;
+     width: 60%;
+     opacity: 0.3;
+ }
+
+ /* ===== RESPONSIVE ===== */
+ @media (max-width: 576px) {
+
+     .nav-menu,
+     .nav-btn {
+         display: none;
+     }
+
+     .hamburger {
+         display: block;
+     }
+
+     .banner h1 {
+         font-size: 28px;
+     }
+
+     .banner-buttons {
+         flex-direction: column;
+     }
+
+     .stats {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .features,
+     .episodes {
+         grid-template-columns: 1fr;
+     }
+
+     .host {
+         flex-direction: column;
+         text-align: center;
+     }
+ }
+
+ 
+
+
+ .footer{
+
+      background-image: url("./assets/hero-bg.png");
+ 
+ }
